@@ -1,0 +1,25 @@
+{
+  "blogApp": {
+    "blogEntry": {
+      "home": {
+        "title": "Blog Entries",
+        "createLabel": "Crear nuevo Blog Entry",
+        "createOrEditLabel": "Crear o editar Blog Entry"
+      },
+      "created": "Un nuevo Blog Entry ha sido creado con el identificador {{ param }}",
+      "updated": "Un Blog Entry ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Blog Entry ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Blog Entry {{ id }}?"
+      },
+      "detail": {
+        "title": "Blog Entry"
+      },
+      "title": "Title",
+      "content": "Content",
+      "date": "Date",
+      "blog": "Blog",
+      "tag": "Tag"
+    }
+  }
+}
