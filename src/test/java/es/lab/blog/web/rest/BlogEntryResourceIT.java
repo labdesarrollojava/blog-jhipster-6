@@ -100,6 +100,19 @@ public class BlogEntryResourceIT {
             .date(DEFAULT_DATE);
         return blogEntry;
     }
+    /**
+     * Create an updated entity for this test.
+     *
+     * This is a static method, as tests for other entities might also need it,
+     * if they test an entity which requires the current entity.
+     */
+    public static BlogEntry createUpdatedEntity(EntityManager em) {
+        BlogEntry blogEntry = new BlogEntry()
+            .title(UPDATED_TITLE)
+            .content(UPDATED_CONTENT)
+            .date(UPDATED_DATE);
+        return blogEntry;
+    }
 
     @BeforeEach
     public void initTest() {

@@ -85,6 +85,18 @@ public class BlogResourceIT {
             .handle(DEFAULT_HANDLE);
         return blog;
     }
+    /**
+     * Create an updated entity for this test.
+     *
+     * This is a static method, as tests for other entities might also need it,
+     * if they test an entity which requires the current entity.
+     */
+    public static Blog createUpdatedEntity(EntityManager em) {
+        Blog blog = new Blog()
+            .name(UPDATED_NAME)
+            .handle(UPDATED_HANDLE);
+        return blog;
+    }
 
     @BeforeEach
     public void initTest() {

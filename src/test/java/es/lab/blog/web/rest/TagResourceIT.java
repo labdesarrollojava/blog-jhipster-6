@@ -81,6 +81,17 @@ public class TagResourceIT {
             .name(DEFAULT_NAME);
         return tag;
     }
+    /**
+     * Create an updated entity for this test.
+     *
+     * This is a static method, as tests for other entities might also need it,
+     * if they test an entity which requires the current entity.
+     */
+    public static Tag createUpdatedEntity(EntityManager em) {
+        Tag tag = new Tag()
+            .name(UPDATED_NAME);
+        return tag;
+    }
 
     @BeforeEach
     public void initTest() {
